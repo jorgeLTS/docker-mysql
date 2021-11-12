@@ -1,0 +1,19 @@
+[mysqld]
+######### Config by jorgelts
+# Network
+connect_timeout = 60
+max_connections = 300
+max_allowed_packet = 128M
+max_connect_errors = 1000
+# Limits
+wait_timeout = 3600
+interactive_timeout = 3600
+tmp_table_size = 512M
+max_heap_table_size = 256M
+symbolic-links=0
+# Seguridad
+tls_version=TLSv1.2
+# Logs
+log-error   = /var/log/mysql/error.log
+general_log  = /var/log/mysql/log_output.log
+######### end config by jorgelts
